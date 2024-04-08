@@ -4,91 +4,135 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
+      <div className={styles.header}>
+        <h1 className={styles.title}>Andrew Sauer</h1>
+        <div className={styles.socialContainer}>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            className={styles.socialLink}
             target="_blank"
+            href="https://github.com/andrewjsauer"
             rel="noopener noreferrer"
+            aria-label="Github (opens in a new tab)"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+            GitHub
+          </a>
+          <a
+            className={styles.socialLink}
+            target="_blank"
+            href="https://www.linkedin.com/in/andrewjsauer/"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn (opens in a new tab)"
+          >
+            LinkedIn
           </a>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className={styles.container}>
+        <div className={styles.descriptionContainer}>
+          <h1 className={styles.description}>
+            Andrew is a fullstack engineer living in the mountains of
+            California. He has a passion for the outdoors and loves to build
+            end-to-end web applications.
+          </h1>
+          <div className={styles.emailContainer}>
+            <a
+              className={styles.email}
+              href="mailto:andrewJohnSauer@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Email me.
+            </a>
+          </div>
+        </div>
+
+        <div className={styles.image}>
+          <Image
+            src="/image.png"
+            alt="Illustration by David Hockney"
+            priority
+            objectFit="cover"
+            width={600}
+            height={500}
+          />
+        </div>
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <div className={styles.experienceContainer}>
+        <h2 className={styles.experienceTitle}>Work Experience</h2>
+        <p className={styles.experienceItem}>
+          Senior Frontend Developer →{" "}
+          <a
+            className={styles.experienceItemLink}
+            href="https://biassync.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            BiasSync
+          </a>
+          , Los Angeles, 2019-Present
+        </p>
+        <p className={styles.experienceItem}>
+          Fullstack Developer →{" "}
+          <a
+            className={styles.experienceItemLink}
+            href="https://sauerApple.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            sauerApple
+          </a>
+          , Los Angeles, 2017-Present
+        </p>
+        <p className={styles.experienceItem}>
+          Python Developer and Research →{" "}
+          <a
+            className={styles.experienceItemLink}
+            href="https://www.warnerbros.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Warner Bros Entertainment
+          </a>
+          , Burbank, 2017–2019
+        </p>
+        <p className={styles.experienceItem}>
+          Mobile Developer →{" "}
+          <a
+            className={styles.experienceItemLink}
+            href="https://www.instagram.com/superseriouscompany/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Super Serious Company
+          </a>
+          , Portugal, 2017-2019
+        </p>
+        <p className={styles.experienceItem}>
+          Android Developer →{" "}
+          <a
+            className={styles.experienceItemLink}
+            href="https://tinder.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tinder
+          </a>
+          , West Hollywood, 2016-2017
+        </p>
+      </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className={styles.experienceContainer}>
+        <h2 className={styles.experienceTitle}>Education</h2>
+        <p className={styles.experienceItem}>
+          Stanford University Graduate School of Business → Institute for
+          General Management
+        </p>
+        <p className={styles.experienceItem}>
+          Saint Mary&apos;s College of California Bachelor of Science → BS,
+          Consumer Neuroscience / Social Psychology
+        </p>
       </div>
     </main>
   );
