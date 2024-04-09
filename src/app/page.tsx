@@ -50,11 +50,12 @@ export default function Home() {
         <div className={styles.image}>
           <Image
             src="/image.png"
-            alt="Illustration by David Hockney"
+            alt="Illustration of Andrew Sauer"
             priority
             objectFit="cover"
             width={600}
             height={500}
+            layout="responsive"
           />
         </div>
       </div>

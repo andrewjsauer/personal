@@ -48,7 +48,7 @@
   width: 100%;
   justify-content: space-around;
   margin-bottom: 3rem;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .descriptionContainer {
@@ -69,6 +69,7 @@
   flex: 1;
   display: flex;
   align-items: center;
+  padding-left: 2rem;
 }
 
 .emailContainer {
@@ -128,56 +129,137 @@
   outline: none;
 }
 
-@media (min-width: 950px) {
+@media (max-width: 1000px) {
   .main {
-    padding: 2em 4em;
+    padding: 1em;
+    min-height: 100vh;
   }
 
   .header {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 6rem;
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: var(--font-roboto);
   }
 
   .socialContainer {
-    gap: 1rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .socialLink {
+    font-weight: 300;
+    line-height: 1.8em;
+    font-size: 1rem;
+    font-family: var(--font-poppins);
+    text-decoration: none;
+    padding: 0.1em 0;
+    color: hsla(0, 0%, 0%, 1);
+    border-bottom: 1px solid transparent;
+  }
+
+  .socialLink:hover,
+  .socialLink:focus-visible {
+    color: #1470af;
+    border-bottom: 1px solid #1470af;
+    outline: none;
+  }
+
+  .a {
+    color: #1470af;
   }
 
   .container {
-    flex-direction: row;
+    display: flex;
+    width: 100%;
     justify-content: space-around;
-    align-items: flex-start;
     margin-bottom: 3rem;
-  }
-
-  .image {
-    flex: 1;
-    justify-content: flex-end;
-    padding: 0 2rem;
+    flex-direction: column;
   }
 
   .descriptionContainer {
+    line-height: 1.8em;
     flex: 1;
+    margin-bottom: 3em;
   }
 
   .description {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: var(--font-roboto);
     margin: 0;
-    text-align: left;
+  }
+
+  .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding-left: 0;
+  }
+
+  .emailContainer {
+    margin-top: 3rem;
   }
 
   .email {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: var(--font-roboto);
+    border-bottom: 1px solid hsla(0, 0%, 0%, 1);
+    text-decoration: none;
+    color: #000;
+  }
+
+  .email:hover,
+  .email:focus-visible {
+    color: #1470af;
+    border-bottom: 1px solid #1470af;
+    outline: none;
+  }
+
+  .experienceContainer {
+    margin-bottom: 3rem;
   }
 
   .experienceTitle {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2em;
+    font-family: var(--font-poppins);
+    margin: 0;
   }
 
   .experienceItem {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2em;
+    font-family: var(--font-poppins);
+    margin: 0;
+  }
+
+  .experienceItemLink {
+    color: #1470af;
+    text-decoration: none;
+    color: #000;
+    line-height: 1.4em;
+    display: inline-block;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 1);
+  }
+
+  .experienceItemLink:hover,
+  .experienceItemLink:focus-visible {
+    color: #1470af;
+    border-bottom: 1px solid #1470af;
+    outline: none;
   }
 }
