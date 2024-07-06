@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.header}>
-        <h1 className={styles.title}>Andrew Sauer</h1>
+        <h1 className={styles.title}>Andrew J Sauer</h1>
         <div className={styles.socialContainer}>
           <a
             className={styles.socialLink}
@@ -15,6 +15,15 @@ export default function Home() {
             aria-label="Github (opens in a new tab)"
           >
             GitHub
+          </a>
+          <a
+            className={styles.socialLink}
+            target="_blank"
+            href="https://gitlab.com/andrewjsauer"
+            rel="noopener noreferrer"
+            aria-label="GitLab (opens in a new tab)"
+          >
+            GitLab
           </a>
           <a
             className={styles.socialLink}
@@ -31,7 +40,7 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.descriptionContainer}>
           <h1 className={styles.description}>
-            Andrew is a fullstack engineer living in the mountains of
+            Andrew is a seasoned frontend developer living in the mountains of
             California. He has a passion for the outdoors and loves to build
             end-to-end web applications.
           </h1>
