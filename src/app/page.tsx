@@ -1,11 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.header}>
-        <h1 className={styles.title}>Andrew J Sauer</h1>
+        <h1 className={styles.title}>Andrew Sauer</h1>
         <div className={styles.socialContainer}>
           <a
             className={styles.socialLink}
@@ -40,31 +41,44 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.descriptionContainer}>
           <h1 className={styles.description}>
-            Andrew is a seasoned frontend developer living in the mountains of
-            California. He has a passion for the outdoors and loves to build
-            end-to-end web applications.
+            Experienced frontend developer crafting seamless web applications.
+            Passionate about the outdoors and full-stack innovation, living in
+            the mountains of California.
           </h1>
           <div className={styles.emailContainer}>
             <a
-              className={styles.email}
+              className={styles.link}
               href="mailto:andrewJohnSauer@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Email me.
+              Email me
+            </a>
+          </div>
+          <div className={styles.resumeContainer}>
+            <Link className={styles.link} href="/blog">
+              Blog
+            </Link>
+          </div>
+          <div className={styles.resumeContainer}>
+            <a
+              className={styles.link}
+              href="https://drive.google.com/file/d/1bFMIlc48SheJNBaxzMUugHyIuKZ5tGSA/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
             </a>
           </div>
         </div>
 
         <div className={styles.image}>
           <Image
-            src="/image.png"
-            alt="Illustration of Andrew Sauer"
+            src="https://drive.google.com/uc?id=1MA3v0XbipPP6YDnLbtmnwyNmyhCT14YD"
+            alt="Photo of Andrew Sauer"
             priority
-            objectFit="cover"
-            width={600}
-            height={500}
-            layout="responsive"
+            width={800}
+            height={600}
           />
         </div>
       </div>
