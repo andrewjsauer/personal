@@ -60,16 +60,6 @@ export default function Home() {
               Blog
             </Link>
           </div>
-          <div className={styles.resumeContainer}>
-            <a
-              className={styles.link}
-              href="https://drive.google.com/file/d/1bFMIlc48SheJNBaxzMUugHyIuKZ5tGSA/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
-            </a>
-          </div>
         </div>
 
         <div className={styles.image}>
