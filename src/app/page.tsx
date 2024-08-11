@@ -41,9 +41,9 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.descriptionContainer}>
           <h1 className={styles.description}>
-            Experienced frontend developer crafting seamless web applications.
-            Passionate about the outdoors and full-stack innovation, living in
-            the mountains of California.
+            Frontend developer crafting seamless web applications. Passionate
+            about the outdoors and full-stack innovation, living in the
+            mountains of California.
           </h1>
           <div className={styles.emailContainer}>
             <a
@@ -54,11 +54,6 @@ export default function Home() {
             >
               Email me
             </a>
-          </div>
-          <div className={styles.resumeContainer}>
-            <Link className={styles.link} href="/blog">
-              Blog
-            </Link>
           </div>
         </div>
 
