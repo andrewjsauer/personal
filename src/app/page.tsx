@@ -41,7 +41,7 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.descriptionContainer}>
           <h1 className={styles.description}>
-            Frontend developer crafting seamless web applications. Passionate
+            Full-stack developer crafting seamless web applications. Passionate
             about the outdoors and full-stack innovation, living in the
             mountains of California.
           </h1>
@@ -59,11 +59,11 @@ export default function Home() {
 
         <div className={styles.image}>
           <Image
-            src="https://drive.google.com/uc?id=1MA3v0XbipPP6YDnLbtmnwyNmyhCT14YD"
+            src="https://drive.google.com/uc?id=15W3B0rwHIBtu_WlX60ck0C4dDqjHpDvX"
             alt="Photo of Andrew Sauer"
             priority
-            width={800}
-            height={600}
+            width={500}
+            height={667}
           />
         </div>
       </div>
@@ -71,7 +71,7 @@ export default function Home() {
       <div className={styles.experienceContainer}>
         <h2 className={styles.experienceTitle}>Work Experience</h2>
         <p className={styles.experienceItem}>
-          Senior Frontend Developer →{" "}
+          Lead Frontend Developer →{" "}
           <a
             className={styles.experienceItemLink}
             href="https://biassync.com/"
@@ -83,7 +83,7 @@ export default function Home() {
           , Los Angeles, 2019-Present
         </p>
         <p className={styles.experienceItem}>
-          Fullstack Developer →{" "}
+          Full-Stack Developer →{" "}
           <a
             className={styles.experienceItemLink}
             href="https://sauerApple.com/"
@@ -95,7 +95,7 @@ export default function Home() {
           , Los Angeles, 2017-Present
         </p>
         <p className={styles.experienceItem}>
-          Python Developer and Research →{" "}
+          Full-Stack Data Scientist →{" "}
           <a
             className={styles.experienceItemLink}
             href="https://www.warnerbros.com/"
@@ -107,7 +107,7 @@ export default function Home() {
           , Burbank, 2017–2019
         </p>
         <p className={styles.experienceItem}>
-          Mobile Developer →{" "}
+          Full-Stack Developer →{" "}
           <a
             className={styles.experienceItemLink}
             href="https://www.instagram.com/superseriouscompany/?hl=en"
