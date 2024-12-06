@@ -64,6 +64,7 @@ export default function Home() {
             priority
             width={500}
             height={667}
+            style={{ maxWidth: "100%", height: "auto" }}
           />
         </div>
       </div>
