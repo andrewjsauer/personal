@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import Link from "next/link";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
@@ -41,15 +41,14 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.descriptionContainer}>
           <h1 className={styles.description}>
-            Full-stack developer crafting seamless web applications. Passionate
-            about the outdoors and full-stack innovation, living in the
-            mountains of California.
+            AI-Driven Full-Stack Developer Crafting Intelligent Web Applications
+            | Building RAG Apps, AI Agents, and Seamless User Experiences from
+            the Mountains of California
           </h1>
           <div className={styles.emailContainer}>
             <a
               className={styles.link}
               href="mailto:andrewJohnSauer@gmail.com"
-              target="_blank"
               rel="noopener noreferrer"
             >
               Email me
@@ -72,7 +71,7 @@ export default function Home() {
       <div className={styles.experienceContainer}>
         <h2 className={styles.experienceTitle}>Work Experience</h2>
         <p className={styles.experienceItem}>
-          Lead Frontend Developer →{" "}
+          Staff Frontend Developer →{" "}
           <a
             className={styles.experienceItemLink}
             href="https://biassync.com/"
@@ -84,7 +83,7 @@ export default function Home() {
           , Los Angeles, 2019-Present
         </p>
         <p className={styles.experienceItem}>
-          Full-Stack Developer →{" "}
+          AI Software Engineer →{" "}
           <a
             className={styles.experienceItemLink}
             href="https://sauerApple.com/"

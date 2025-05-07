@@ -1,6 +1,8 @@
 .main {
   padding: 2em 4em;
   min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .header {
@@ -8,18 +10,22 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 1rem;
 }
 
 .title {
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 2.2rem;
+  font-weight: 500;
   font-family: var(--font-roboto);
-  color: #424242;
+  color: #073763;
+  margin: 0;
+  letter-spacing: -0.01em;
 }
 
 .socialContainer {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .socialLink {
@@ -31,6 +37,8 @@
   padding: 0.1em 0;
   color: #424242;
   border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .socialLink:hover,
@@ -48,8 +56,8 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 3rem;
-  gap: 2rem;
+  margin-bottom: 4rem;
+  gap: 3rem;
 }
 
 .descriptionContainer {
@@ -59,12 +67,17 @@
 }
 
 .description {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 400;
   line-height: 1.4em;
   font-family: var(--font-roboto);
   margin: 0;
-  color: #424242;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.description:hover {
+  color: #073763;
 }
 
 .image {
@@ -73,6 +86,24 @@
   align-items: center;
   justify-content: flex-end;
   padding-left: 2rem;
+}
+
+.image img {
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: perspective(1000px) rotateY(0deg);
+  max-width: 100%;
+  height: auto;
+  filter: brightness(1.02) contrast(1.02);
+  will-change: transform, box-shadow;
+}
+
+.image:hover img {
+  transform: perspective(1000px) rotateY(-2deg) translateZ(10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15),
+    0 10px 10px -5px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
 }
 
 .emailContainer {
@@ -84,13 +115,18 @@
 }
 
 .link {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 400;
   line-height: 1.4em;
   font-family: var(--font-roboto);
   border-bottom: 1px solid #424242;
   text-decoration: none;
   color: #424242;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 0 0.2em;
 }
 
 .link:hover,
@@ -100,16 +136,33 @@
   outline: none;
 }
 
+.link::after {
+  content: "→";
+  opacity: 0;
+  margin-left: 0.2em;
+  transition: all 0.3s ease;
+  position: absolute;
+  transform: translateX(-8px);
+}
+
+.link:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .experienceContainer {
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .experienceTitle {
-  font-size: 1.6rem;
-  font-weight: 300;
-  line-height: 2em;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6em;
   font-family: var(--font-poppins);
-  margin: 0;
+  margin: 0 0 1rem 0;
+  color: #073763;
 }
 
 .experienceItem {
@@ -117,7 +170,12 @@
   font-weight: 300;
   line-height: 2em;
   font-family: var(--font-poppins);
-  margin: 0;
+  margin: 0 0 0.5rem 0;
+  transition: transform 0.3s ease;
+}
+
+.experienceItem:hover {
+  transform: translateX(5px);
 }
 
 .experienceItemLink {
@@ -127,6 +185,8 @@
   line-height: 1.4em;
   display: inline-block;
   border-bottom: 1px solid hsla(0, 0%, 0%, 1);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .experienceItemLink:hover,
@@ -187,6 +247,11 @@
     max-width: 90%;
     height: auto;
     object-fit: contain;
+    transform: perspective(1000px) rotateY(0deg);
+  }
+
+  .image:hover img {
+    transform: perspective(1000px) rotateY(-1deg) translateZ(5px);
   }
 
   .link {
@@ -231,4 +296,64 @@
   .socialContainer {
     gap: 1rem;
   }
+
+  .image img {
+    transform: none;
+  }
+
+  .image:hover img {
+    transform: none;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Add smooth transitions to links */
+.socialLink,
+.link,
+.experienceItemLink {
+  transition: all 0.3s ease;
+}
+
+/* Enhance the description text */
+.description {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.4em;
+  font-family: var(--font-roboto);
+  margin: 0;
+  color: #424242;
+  transition: color 0.3s ease;
+}
+
+.description:hover {
+  color: #073763;
+}
+
+/* Add subtle animation to experience items */
+.experienceItem {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2em;
+  font-family: var(--font-poppins);
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.experienceItem:hover {
+  transform: translateX(5px);
+}
+
+/* Enhance pointer behavior for all link classes */
+.socialLink:hover,
+.link:hover,
+.experienceItemLink:hover {
+  cursor: pointer !important;
+}
+
+/* Make sure all interactive elements have the pointer cursor */
+.socialLink,
+.link,
+.experienceItemLink {
+  cursor: pointer;
 }

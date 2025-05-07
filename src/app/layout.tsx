@@ -16,9 +16,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "andrew",
+  title: "andrew sauer",
   description:
-    "Welcome to my personal website. Explore my work, skills, and professional journey.",
+    "Explore the portfolio of Andrew Sauer, an AI-driven full-stack developer specializing in React, Next.js, and advanced language models (RAG apps, AI agents). Discover my work, skills, and projects.",
 };
 
 export default function RootLayout({
