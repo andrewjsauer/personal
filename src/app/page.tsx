@@ -71,18 +71,6 @@ export default function Home() {
       <div className={styles.experienceContainer}>
         <h2 className={styles.experienceTitle}>Work Experience</h2>
         <p className={styles.experienceItem}>
-          Staff Frontend Developer →{" "}
-          <a
-            className={styles.experienceItemLink}
-            href="https://biassync.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            BiasSync
-          </a>
-          , Los Angeles, 2019-Present
-        </p>
-        <p className={styles.experienceItem}>
           AI Software Engineer →{" "}
           <a
             className={styles.experienceItemLink}
@@ -93,6 +81,18 @@ export default function Home() {
             sauerApple
           </a>
           , Los Angeles, 2017-Present
+        </p>
+        <p className={styles.experienceItem}>
+          Senior Frontend Developer →{" "}
+          <a
+            className={styles.experienceItemLink}
+            href="https://biassync.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            BiasSync
+          </a>
+          , Los Angeles, 2019-2025
         </p>
         <p className={styles.experienceItem}>
           Full-Stack Data Scientist →{" "}
