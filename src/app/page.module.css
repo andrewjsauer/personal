@@ -67,17 +67,26 @@
 }
 
 .description {
-  font-size: 2.6rem;
+  font-size: clamp(1.4rem, 1rem + 2vw, 2.6rem);
   font-weight: 400;
-  line-height: 1.4em;
+  line-height: 1.4;
   font-family: var(--font-roboto);
-  margin: 0;
-  color: #333;
+  margin: 0 0 0.8rem 0;
+  color: #424242;
   transition: color 0.3s ease;
 }
 
 .description:hover {
   color: #073763;
+}
+
+h1.description {
+  margin-bottom: clamp(0.6rem, 0.4rem + 0.5vw, 1rem);
+}
+
+h2.description {
+  font-size: clamp(1.2rem, 0.8rem + 1.5vw, 2rem);
+  font-weight: 300;
 }
 
 .image {
@@ -107,7 +116,7 @@
 }
 
 .emailContainer {
-  margin-top: 3rem;
+  margin-top: clamp(1.5rem, 1rem + 2vw, 3rem);
 }
 
 .resumeContainer {
@@ -115,9 +124,9 @@
 }
 
 .link {
-  font-size: 2.2rem;
+  font-size: clamp(1.2rem, 0.9rem + 1.2vw, 2.2rem);
   font-weight: 400;
-  line-height: 1.4em;
+  line-height: 1.4;
   font-family: var(--font-roboto);
   border-bottom: 1px solid #424242;
   text-decoration: none;

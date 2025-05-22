@@ -41,10 +41,12 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.descriptionContainer}>
           <h1 className={styles.description}>
-            AI-Driven Full-Stack Developer Crafting Intelligent Web Applications
-            | Building RAG Apps, AI Agents, and Seamless User Experiences from
-            the Mountains of California
+            Where AI Engineering Meets Product Thinking
           </h1>
+          <h2 className={styles.description}>
+            I turn models into real products — RAG tools, AI agents, and
+            scalable apps that ship.
+          </h2>
           <div className={styles.emailContainer}>
             <a
               className={styles.link}
@@ -71,7 +73,7 @@ export default function Home() {
       <div className={styles.experienceContainer}>
         <h2 className={styles.experienceTitle}>Work Experience</h2>
         <p className={styles.experienceItem}>
-          AI Software Engineer →{" "}
+          AI Product Engineer →{" "}
           <a
             className={styles.experienceItemLink}
             href="https://sauerApple.com/"
