@@ -1,8 +1,25 @@
+.skipLink {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #073763;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 100;
+  font-family: var(--font-roboto);
+}
+
+.skipLink:focus {
+  top: 0;
+}
+
 .main {
   padding: 2em 4em;
   min-height: 100vh;
   max-width: 1400px;
   margin: 0 auto;
+  position: relative;
 }
 
 .header {
@@ -48,10 +65,6 @@
   outline: none;
 }
 
-.a {
-  color: #073763;
-}
-
 .container {
   display: flex;
   width: 100%;
@@ -84,9 +97,14 @@ h1.description {
   margin-bottom: clamp(0.6rem, 0.4rem + 0.5vw, 1rem);
 }
 
-h2.description {
+.subdescription {
   font-size: clamp(1.2rem, 0.8rem + 1.5vw, 2rem);
   font-weight: 300;
+  line-height: 1.4;
+  font-family: var(--font-roboto);
+  margin: 0 0 0.8rem 0;
+  color: #424242;
+  transition: color 0.3s ease;
 }
 
 .image {
@@ -99,28 +117,29 @@ h2.description {
 
 .image img {
   border-radius: 8px;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   transform: perspective(1000px) rotateY(0deg);
   max-width: 100%;
   height: auto;
   filter: brightness(1.02) contrast(1.02);
-  will-change: transform, box-shadow;
 }
 
 .image:hover img {
   transform: perspective(1000px) rotateY(-2deg) translateZ(10px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15),
-    0 10px 10px -5px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.15),
+    0 10px 10px -5px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
 }
 
 .emailContainer {
   margin-top: clamp(1.5rem, 1rem + 2vw, 3rem);
-}
-
-.resumeContainer {
-  margin-top: 1rem;
 }
 
 .link {
@@ -165,6 +184,12 @@ h2.description {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+.experienceList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .experienceTitle {
   font-size: 1.8rem;
   font-weight: 500;
@@ -180,6 +205,7 @@ h2.description {
   line-height: 2em;
   font-family: var(--font-poppins);
   margin: 0 0 0.5rem 0;
+  padding-left: 0;
   transition: transform 0.3s ease;
 }
 
@@ -188,7 +214,6 @@ h2.description {
 }
 
 .experienceItemLink {
-  color: #073763;
   text-decoration: none;
   color: #000;
   line-height: 1.4em;
@@ -312,57 +337,63 @@ h2.description {
 
   .image:hover img {
     transform: none;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.1),
       0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
 }
 
-/* Add smooth transitions to links */
-.socialLink,
-.link,
-.experienceItemLink {
-  transition: all 0.3s ease;
+/* Print styles */
+@media print {
+  .skipLink {
+    display: none;
+  }
+
+  .main {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .header {
+    border-bottom: 2px solid #000;
+    margin-bottom: 2rem;
+  }
+
+  .socialContainer {
+    display: none;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .link::after {
+    content: "";
+  }
+
+  .experienceItemLink {
+    color: #000;
+    border-bottom: 1px solid #000;
+  }
+
+  .experienceItem:hover {
+    transform: none;
+  }
+
+  .description:hover {
+    color: #424242;
+  }
+
+  .experienceContainer {
+    page-break-inside: avoid;
+  }
 }
 
-/* Enhance the description text */
-.description {
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 1.4em;
-  font-family: var(--font-roboto);
-  margin: 0;
-  color: #424242;
-  transition: color 0.3s ease;
-}
-
-.description:hover {
-  color: #073763;
-}
-
-/* Add subtle animation to experience items */
-.experienceItem {
-  font-size: 1.2rem;
-  font-weight: 300;
-  line-height: 2em;
-  font-family: var(--font-poppins);
-  margin: 0;
-  transition: transform 0.3s ease;
-}
-
-.experienceItem:hover {
-  transform: translateX(5px);
-}
-
-/* Enhance pointer behavior for all link classes */
-.socialLink:hover,
-.link:hover,
-.experienceItemLink:hover {
-  cursor: pointer !important;
-}
-
-/* Make sure all interactive elements have the pointer cursor */
-.socialLink,
-.link,
-.experienceItemLink {
-  cursor: pointer;
+/* Enhanced focus styles for better keyboard navigation */
+.socialLink:focus-visible,
+.link:focus-visible,
+.experienceItemLink:focus-visible {
+  outline: 2px solid #073763;
+  outline-offset: 2px;
+  border-radius: 2px;
 }

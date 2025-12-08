@@ -20,11 +20,4 @@ body {
   background-color: #eaeaee;
 }
 
-/* Enhanced anchor styling */
-a {
-  cursor: pointer !important; /* Force pointer cursor */
-}
-
-a:hover {
-  cursor: pointer !important; /* Ensure pointer on hover */
-}
+/* Anchor styling - cursor is handled by CSS modules */
