@@ -7,14 +7,6 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "*",
         allow: "/",
       },
-      {
-        userAgent: "*",
-        allow: "/blog",
-      },
-      {
-        userAgent: "*",
-        allow: "/blog/[slug]",
-      },
     ],
     sitemap: "https://andrewjsauer.com/sitemap.xml",
   };

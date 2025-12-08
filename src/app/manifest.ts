@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
       "Welcome to my personal portfolio and CV. Explore my work, skills, and professional journey.",
     start_url: "/",
     display: "standalone",
-    background_color: "#fff",
-    theme_color: "#fff",
+    background_color: "#eaeaee",
+    theme_color: "#073763",
     icons: [
       {
         src: "/favicon.ico",
