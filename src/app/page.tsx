@@ -46,9 +46,9 @@ export default function Home() {
 
         <div className={styles.container}>
           <div className={styles.descriptionContainer}>
-            <h1 className={styles.description}>
+            <h2 className={styles.description}>
               Where AI Engineering Meets Product Thinking
-            </h1>
+            </h2>
             <p className={styles.subdescription}>
               I turn models into real products — RAG tools, AI agents, and
               scalable apps that ship.
@@ -66,7 +66,7 @@ export default function Home() {
 
           <div className={styles.image}>
             <Image
-              src="https://drive.google.com/uc?id=15W3B0rwHIBtu_WlX60ck0C4dDqjHpDvX"
+              src="/profile.jpg"
               alt="Photo of Andrew Sauer"
               priority
               width={500}

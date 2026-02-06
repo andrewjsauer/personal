@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Poppins, Roboto } from "next/font/google";
+import "./globals.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
-  weight: ["300", "400", "500"],
+  weight: ["300", "500"],
   variable: "--font-poppins",
 });
 
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://drive.google.com/uc?id=15W3B0rwHIBtu_WlX60ck0C4dDqjHpDvX",
+        url: "https://andrewjsauer.com/profile.jpg",
         width: 500,
         height: 667,
         alt: "Photo of Andrew Sauer",
@@ -66,6 +67,12 @@ export const metadata: Metadata = {
     },
   },
   metadataBase: new URL("https://andrewjsauer.com"),
+};
+
+export const viewport: Viewport = {
+  themeColor: "#073763",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
