@@ -17,9 +17,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Andrew Sauer | AI-Driven Full-Stack Developer",
+  title: "Andrew Sauer | AI Engineer & Full-Stack Developer",
   description:
-    "Explore the portfolio of Andrew Sauer, an AI-driven full-stack developer specializing in React, Next.js, and advanced language models (RAG apps, AI agents). Discover my work, skills, and projects.",
+    "Andrew Sauer builds production AI systems — retrieval pipelines, autonomous agents, and full-stack apps — across construction, media, education, and consumer products.",
   keywords: [
     "Andrew Sauer",
     "Full-Stack Developer",
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Andrew Sauer" }],
   creator: "Andrew Sauer",
   openGraph: {
-    title: "Andrew Sauer | AI-Driven Full-Stack Developer",
+    title: "Andrew Sauer | AI Engineer & Full-Stack Developer",
     description:
-      "Explore the portfolio of Andrew Sauer, an AI-driven full-stack developer specializing in React, Next.js, and advanced language models (RAG apps, AI agents).",
+      "Andrew Sauer builds production AI systems — retrieval pipelines, autonomous agents, and full-stack apps — across construction, media, education, and consumer products.",
     url: "https://andrewjsauer.com",
     siteName: "Andrew Sauer Portfolio",
     locale: "en_US",
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Andrew Sauer | AI-Driven Full-Stack Developer",
+    title: "Andrew Sauer | AI Engineer & Full-Stack Developer",
     description:
-      "AI-driven full-stack developer specializing in React, Next.js, and advanced language models.",
+      "Andrew Sauer builds production AI systems — retrieval pipelines, autonomous agents, and full-stack apps.",
   },
   robots: {
     index: true,
@@ -93,7 +93,7 @@ export default function RootLayout({
     ],
     email: "andrewJohnSauer@gmail.com",
     description:
-      "AI-driven full-stack developer specializing in React, Next.js, and advanced language models (RAG apps, AI agents).",
+      "AI engineer and full-stack developer building production retrieval systems, autonomous agents, and full-stack apps.",
   };
 
   return (

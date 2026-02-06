@@ -192,13 +192,34 @@
   font-weight: 300;
   line-height: 2em;
   font-family: var(--font-poppins);
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 1.5rem 0;
   padding-left: 0;
   transition: transform 0.3s ease;
 }
 
 .experienceItem:hover {
   transform: translateX(5px);
+}
+
+.experienceDescription {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  font-family: var(--font-roboto);
+  color: var(--color-text);
+  margin: 0.3rem 0 0 0;
+  opacity: 0.85;
+}
+
+.bio {
+  font-size: clamp(1rem, 0.8rem + 0.8vw, 1.3rem);
+  font-weight: 300;
+  line-height: 1.7;
+  font-family: var(--font-roboto);
+  color: var(--color-text);
+  max-width: 720px;
+  margin: 0 0 3rem 0;
+  opacity: 0.9;
 }
 
 .experienceItemLink {
@@ -293,7 +314,15 @@
   .experienceItem {
     font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .experienceDescription {
+    font-size: 0.9rem;
+  }
+
+  .bio {
+    margin-bottom: 2rem;
   }
 }
 
