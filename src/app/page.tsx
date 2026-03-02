@@ -71,8 +71,8 @@ export default function Home() {
               priority
               width={1000}
               height={750}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 500px"
-              style={{ maxWidth: "100%", height: "auto" }}
+              sizes="(max-width: 768px) 100vw, (max-width: 1000px) 90vw, 50vw"
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
         </div>
