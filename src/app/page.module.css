@@ -218,6 +218,18 @@
   font-family: var(--font-roboto);
   color: var(--color-text);
   max-width: 720px;
+  margin: 0 0 2rem 0;
+  opacity: 0.9;
+}
+
+.perspective {
+  font-size: clamp(1.05rem, 0.85rem + 0.8vw, 1.35rem);
+  font-weight: 300;
+  line-height: 1.7;
+  font-family: var(--font-roboto);
+  font-style: italic;
+  color: var(--color-text);
+  max-width: 720px;
   margin: 0 0 3rem 0;
   opacity: 0.9;
 }

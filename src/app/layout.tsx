@@ -17,25 +17,25 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Andrew Sauer | AI Engineer & Full-Stack Developer",
+  title: "Andrew Sauer | AI Product Strategy & Engineering",
   description:
-    "Andrew Sauer builds production AI systems — retrieval pipelines, autonomous agents, and full-stack apps — across construction, media, education, and consumer products.",
+    "Andrew Sauer helps teams identify where AI creates real leverage — then designs and builds the systems that deliver it. Focus areas: construction, media, and enterprise document intelligence.",
   keywords: [
     "Andrew Sauer",
-    "Full-Stack Developer",
-    "AI Engineer",
-    "React Developer",
-    "Next.js",
+    "AI Product Strategy",
+    "AI Engineering",
+    "AI Consulting",
+    "Production AI Systems",
     "RAG Applications",
     "AI Agents",
-    "Portfolio",
+    "Construction AI",
   ],
   authors: [{ name: "Andrew Sauer" }],
   creator: "Andrew Sauer",
   openGraph: {
-    title: "Andrew Sauer | AI Engineer & Full-Stack Developer",
+    title: "Andrew Sauer | AI Product Strategy & Engineering",
     description:
-      "Andrew Sauer builds production AI systems — retrieval pipelines, autonomous agents, and full-stack apps — across construction, media, education, and consumer products.",
+      "Andrew Sauer helps teams identify where AI creates real leverage — then designs and builds the systems that deliver it. Focus areas: construction, media, and enterprise document intelligence.",
     url: "https://andrewjsauer.com",
     siteName: "Andrew Sauer Portfolio",
     locale: "en_US",
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Andrew Sauer | AI Engineer & Full-Stack Developer",
+    title: "Andrew Sauer | AI Product Strategy & Engineering",
     description:
-      "Andrew Sauer builds production AI systems — retrieval pipelines, autonomous agents, and full-stack apps.",
+      "Andrew Sauer helps teams identify where AI creates real leverage — then designs and builds the systems that deliver it.",
   },
   robots: {
     index: true,
@@ -84,7 +84,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Andrew Sauer",
-    jobTitle: "AI Engineer",
+    jobTitle: "AI Product Strategist & Engineer",
     url: "https://andrewjsauer.com",
     sameAs: [
       "https://github.com/andrewjsauer",
@@ -93,7 +93,7 @@ export default function RootLayout({
     ],
     email: "andrewJohnSauer@gmail.com",
     description:
-      "AI engineer and full-stack developer building production retrieval systems, autonomous agents, and full-stack apps.",
+      "Helps teams identify where AI creates real leverage — then designs and builds the systems that deliver it.",
   };
 
   return (

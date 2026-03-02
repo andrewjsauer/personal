@@ -17,9 +17,18 @@ export default function Home() {
             <a
               className={styles.socialLink}
               target="_blank"
+              href="https://www.linkedin.com/in/andrewjsauer/"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn (opens in a new tab)"
+            >
+              LinkedIn
+            </a>
+            <a
+              className={styles.socialLink}
+              target="_blank"
               href="https://github.com/andrewjsauer"
               rel="noopener noreferrer"
-              aria-label="Github (opens in a new tab)"
+              aria-label="GitHub (opens in a new tab)"
             >
               GitHub
             </a>
@@ -32,26 +41,17 @@ export default function Home() {
             >
               GitLab
             </a>
-            <a
-              className={styles.socialLink}
-              target="_blank"
-              href="https://www.linkedin.com/in/andrewjsauer/"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn (opens in a new tab)"
-            >
-              LinkedIn
-            </a>
           </nav>
         </header>
 
         <div className={styles.container}>
           <div className={styles.descriptionContainer}>
             <h2 className={styles.description}>
-              AI engineering and product development.
+              I help teams figure out where AI actually fits — then build it.
             </h2>
             <p className={styles.subdescription}>
-              Retrieval systems, autonomous agents, and full-stack apps —
-              from prototype to production.
+              Product strategy, system design, and hands-on engineering for AI
+              that works inside real operations.
             </p>
             <div className={styles.emailContainer}>
               <a
@@ -59,7 +59,7 @@ export default function Home() {
                 href="mailto:andrewJohnSauer@gmail.com"
                 aria-label="Send email to Andrew Sauer"
               >
-                Email me
+                Get in touch
               </a>
             </div>
           </div>
@@ -78,11 +78,20 @@ export default function Home() {
         </div>
 
         <p className={styles.bio}>
-          AI engineer and full-stack developer with a background in
-          neuroscience, data science, and product development. I build
-          retrieval systems, agent workflows, and document intelligence tools
-          that integrate into existing team processes — across construction,
-          media, education, and consumer products.
+          Background in neuroscience (Saint Mary&apos;s) and product strategy
+          (Stanford GSB), with deep technical ability in AI systems
+          engineering. I work with teams to identify where AI creates real
+          leverage in their operations — then design and build the systems
+          that deliver it. Current focus: construction, media, and enterprise
+          document intelligence.
+        </p>
+
+        <p className={styles.perspective}>
+          Most AI projects fail not because the technology doesn&apos;t work,
+          but because nobody asked the right question about where it fits. The
+          hardest part isn&apos;t building the system — it&apos;s understanding
+          the operation well enough to know what the system should do.
+          That&apos;s where I focus.
         </p>
 
         <section
@@ -105,11 +114,10 @@ export default function Home() {
               </a>
               , Remote, 2025-Present
               <p className={styles.experienceDescription}>
-                Building production AI agents used daily by construction teams
-                to interpret drawings, answer RFIs, summarize submittals, and
-                retrieve project data from large unstructured document sets.
-                Designed ingestion and retrieval pipelines using hybrid search,
-                dense embeddings, reranking, and vector databases.
+                Building AI systems used daily by construction teams to navigate
+                thousands of drawings, RFIs, and submittals — replacing hours of
+                manual document search with seconds. Designed the retrieval
+                architecture from ingestion through delivery.
               </p>
             </li>
             <li className={styles.experienceItem}>
@@ -124,10 +132,10 @@ export default function Home() {
               </a>
               , Los Angeles, 2017-Present
               <p className={styles.experienceDescription}>
-                Built and launched AI-first consumer and internal tools using
-                React, TypeScript, React Native, Next.js, and Python. Designed
-                RAG systems and autonomous agents supporting personalized
-                content, adaptive user experiences, and automated workflows.
+                Designing and shipping AI-first products that solve real user
+                problems — from personalized content tools to automated
+                workflows. Full ownership from product concept through
+                production deployment.
               </p>
             </li>
             <li className={styles.experienceItem}>
@@ -142,10 +150,9 @@ export default function Home() {
               </a>
               , Los Angeles, 2019-2025
               <p className={styles.experienceDescription}>
-                Led development of a learning management platform used by
-                nontechnical clients. Built admin tooling enabling client
-                management, reporting, and data integration without engineering
-                involvement.
+                Led development of a platform that enabled nontechnical clients
+                to manage training programs, reporting, and data integrations
+                independently — removing engineering as a bottleneck.
               </p>
             </li>
             <li className={styles.experienceItem}>
@@ -160,10 +167,9 @@ export default function Home() {
               </a>
               , Burbank, 2017-2019
               <p className={styles.experienceDescription}>
-                Led a neuroscience-driven data science team applying
-                Python-based analysis and experimental tooling in a production
-                research environment. Built internal tools to design, manage,
-                and operationalize studies.
+                Led a neuroscience-driven research team applying data science to
+                understand audience behavior. Built the internal tools that let
+                the team design, run, and operationalize studies at scale.
               </p>
             </li>
             <li className={styles.experienceItem}>
