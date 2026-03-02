@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://andrewjsauer.com/profile.jpg",
-        width: 500,
-        height: 667,
+        width: 1000,
+        height: 750,
         alt: "Photo of Andrew Sauer",
       },
     ],
@@ -54,6 +54,9 @@ export const metadata: Metadata = {
     title: "Andrew Sauer | AI Product Strategy & Engineering",
     description:
       "Andrew Sauer helps teams identify where AI creates real leverage — then designs and builds the systems that deliver it.",
+  },
+  alternates: {
+    canonical: "https://andrewjsauer.com",
   },
   robots: {
     index: true,
@@ -86,6 +89,7 @@ export default function RootLayout({
     name: "Andrew Sauer",
     jobTitle: "AI Product Strategist & Engineer",
     url: "https://andrewjsauer.com",
+    image: "https://andrewjsauer.com/profile.jpg",
     sameAs: [
       "https://github.com/andrewjsauer",
       "https://gitlab.com/andrewjsauer",
@@ -94,6 +98,38 @@ export default function RootLayout({
     email: "andrewJohnSauer@gmail.com",
     description:
       "Helps teams identify where AI creates real leverage — then designs and builds the systems that deliver it.",
+    worksFor: [
+      {
+        "@type": "Organization",
+        name: "Human Agency",
+        url: "https://humanagency.com/",
+      },
+      {
+        "@type": "Organization",
+        name: "sauerApple",
+        url: "https://sauerApple.com/",
+      },
+    ],
+    alumniOf: [
+      {
+        "@type": "EducationalOrganization",
+        name: "Stanford Graduate School of Business",
+      },
+      {
+        "@type": "EducationalOrganization",
+        name: "Saint Mary's College of California",
+      },
+    ],
+    knowsAbout: [
+      "AI Product Strategy",
+      "Production AI Systems",
+      "RAG Applications",
+      "AI Agents",
+      "Construction AI",
+      "Document Intelligence",
+      "System Design",
+      "Full-Stack Development",
+    ],
   };
 
   return (

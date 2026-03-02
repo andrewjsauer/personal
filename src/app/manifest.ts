@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Andrew J Sauer Personal Website",
     short_name: "AJS Personal Website",
     description:
-      "Welcome to my personal portfolio and CV. Explore my work, skills, and professional journey.",
+      "Andrew Sauer — AI Product Strategist & Engineer. Helping teams identify where AI creates real leverage, then building the systems that deliver it.",
     start_url: "/",
     display: "standalone",
     background_color: "#eaeaee",
@@ -15,6 +15,18 @@ export default function manifest(): MetadataRoute.Manifest {
         src: "/favicon.ico",
         sizes: "any",
         type: "image/x-icon",
+      },
+      {
+        src: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+        purpose: "any",
+      },
+      {
+        src: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "any",
       },
     ],
   };

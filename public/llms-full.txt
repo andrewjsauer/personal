@@ -1,0 +1,60 @@
+# Andrew Sauer — Full Profile
+
+> AI Product Strategist & Engineer helping teams identify where AI creates real leverage — then designing and building the systems that deliver it.
+
+## About
+
+Andrew Sauer works at the intersection of product strategy and AI engineering. He helps teams figure out where AI actually fits in their operations, then builds the systems that deliver results. Current focus areas: construction, media, and enterprise document intelligence.
+
+Background in neuroscience (Saint Mary's College of California, BS in Consumer Neuroscience & Social Psychology) and product strategy (Stanford Graduate School of Business, Institute for General Management), with deep technical ability in AI systems engineering.
+
+## Perspective
+
+Most AI projects fail not because the technology doesn't work, but because nobody asked the right question about where it fits. The hardest part isn't building the system — it's understanding the operation well enough to know what the system should do. That's where Andrew focuses.
+
+## Work Experience
+
+### AI Engineer — Human Agency (2025-Present)
+Remote. Building AI systems used daily by construction teams to navigate thousands of drawings, RFIs, and submittals — replacing hours of manual document search with seconds. Designed the retrieval architecture from ingestion through delivery.
+
+### AI Product Engineer — sauerApple (2017-Present)
+Los Angeles. Designing and shipping AI-first products that solve real user problems — from personalized content tools to automated workflows. Full ownership from product concept through production deployment.
+
+### Lead Frontend Developer — BiasSync (2019-2025)
+Los Angeles. Led development of a platform that enabled nontechnical clients to manage training programs, reporting, and data integrations independently — removing engineering as a bottleneck.
+
+### Full-Stack Data Scientist — Warner Bros Entertainment (2017-2019)
+Burbank. Led a neuroscience-driven research team applying data science to understand audience behavior. Built the internal tools that let the team design, run, and operationalize studies at scale.
+
+### Full-Stack Developer — Super Serious Company (2017-2019)
+Portugal.
+
+### Android Developer — Tinder (2016-2017)
+West Hollywood.
+
+## Education
+
+- Stanford Graduate School of Business — Institute for General Management
+- Saint Mary's College of California — BS, Consumer Neuroscience & Social Psychology
+
+## Expertise
+
+- AI Product Strategy & Consulting
+- Production AI Systems Engineering
+- RAG (Retrieval-Augmented Generation) Applications
+- Document Intelligence & Enterprise Search
+- AI Agents & Autonomous Systems
+- Construction Technology & AI
+- Media & Entertainment Technology
+- System Design & Architecture
+- Full-Stack Development (React, TypeScript, Python, Node.js)
+- Data Science & Machine Learning
+- Neuroscience-Informed Product Design
+
+## Contact
+
+- Website: https://andrewjsauer.com
+- LinkedIn: https://www.linkedin.com/in/andrewjsauer/
+- GitHub: https://github.com/andrewjsauer
+- GitLab: https://gitlab.com/andrewjsauer
+- Email: andrewJohnSauer@gmail.com

@@ -1,0 +1,35 @@
+# Andrew Sauer
+
+> AI Product Strategist & Engineer helping teams identify where AI creates real leverage — then designing and building the systems that deliver it.
+
+## About
+
+Andrew Sauer works at the intersection of product strategy and AI engineering. He helps teams figure out where AI actually fits in their operations, then builds the systems that deliver results. Focus areas include construction, media, and enterprise document intelligence.
+
+Background in neuroscience (Saint Mary's College of California) and product strategy (Stanford GSB), with deep technical ability in AI systems engineering.
+
+## Current Work
+
+- AI Engineer at Human Agency — Building AI systems for construction teams to navigate thousands of drawings, RFIs, and submittals
+- AI Product Engineer at sauerApple — Designing and shipping AI-first products from concept through production
+
+## Expertise
+
+- AI Product Strategy
+- Production AI Systems
+- RAG Applications & Document Intelligence
+- AI Agents
+- Construction AI
+- System Design & Architecture
+
+## Links
+
+- Website: https://andrewjsauer.com
+- LinkedIn: https://www.linkedin.com/in/andrewjsauer/
+- GitHub: https://github.com/andrewjsauer
+- GitLab: https://gitlab.com/andrewjsauer
+- Email: andrewJohnSauer@gmail.com
+
+## Optional
+
+- llms-full.txt: https://andrewjsauer.com/llms-full.txt

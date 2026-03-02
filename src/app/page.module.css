@@ -208,7 +208,6 @@
   font-family: var(--font-roboto);
   color: var(--color-text);
   margin: 0.3rem 0 0 0;
-  opacity: 0.85;
 }
 
 .bio {
@@ -219,7 +218,6 @@
   color: var(--color-text);
   max-width: 720px;
   margin: 0 0 2rem 0;
-  opacity: 0.9;
 }
 
 .perspective {
@@ -231,7 +229,17 @@
   color: var(--color-text);
   max-width: 720px;
   margin: 0 0 3rem 0;
-  opacity: 0.9;
+}
+
+.footer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 4em;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  font-family: var(--font-roboto);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--color-text);
 }
 
 .experienceItemLink {
@@ -336,6 +344,10 @@
   .bio {
     margin-bottom: 2rem;
   }
+
+  .footer {
+    padding: 1.5rem;
+  }
 }
 
 /* Add a smaller breakpoint for very small devices */
@@ -415,6 +427,11 @@
 
   .experienceContainer {
     page-break-inside: avoid;
+  }
+
+  .footer {
+    padding: 1rem 0;
+    border-top: 1px solid #000;
   }
 }
 

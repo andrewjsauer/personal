@@ -69,8 +69,8 @@ export default function Home() {
               src="/profile.jpg"
               alt="Photo of Andrew Sauer"
               priority
-              width={500}
-              height={667}
+              width={1000}
+              height={750}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 500px"
               style={{ maxWidth: "100%", height: "auto" }}
             />
@@ -103,7 +103,7 @@ export default function Home() {
           </h2>
           <ul className={styles.experienceList}>
             <li className={styles.experienceItem}>
-              AI Engineer →{" "}
+              AI Engineer <span aria-hidden="true">→</span>{" "}
               <a
                 className={styles.experienceItemLink}
                 href="https://humanagency.com/"
@@ -121,7 +121,7 @@ export default function Home() {
               </p>
             </li>
             <li className={styles.experienceItem}>
-              AI Product Engineer →{" "}
+              AI Product Engineer <span aria-hidden="true">→</span>{" "}
               <a
                 className={styles.experienceItemLink}
                 href="https://sauerApple.com/"
@@ -139,7 +139,7 @@ export default function Home() {
               </p>
             </li>
             <li className={styles.experienceItem}>
-              Lead Frontend Developer →{" "}
+              Lead Frontend Developer <span aria-hidden="true">→</span>{" "}
               <a
                 className={styles.experienceItemLink}
                 href="https://biassync.com/"
@@ -156,7 +156,7 @@ export default function Home() {
               </p>
             </li>
             <li className={styles.experienceItem}>
-              Full-Stack Data Scientist →{" "}
+              Full-Stack Data Scientist <span aria-hidden="true">→</span>{" "}
               <a
                 className={styles.experienceItemLink}
                 href="https://www.warnerbros.com/"
@@ -173,7 +173,7 @@ export default function Home() {
               </p>
             </li>
             <li className={styles.experienceItem}>
-              Full-Stack Developer →{" "}
+              Full-Stack Developer <span aria-hidden="true">→</span>{" "}
               <a
                 className={styles.experienceItemLink}
                 href="https://www.instagram.com/superseriouscompany/?hl=en"
@@ -185,7 +185,7 @@ export default function Home() {
               , Portugal, 2017-2019
             </li>
             <li className={styles.experienceItem}>
-              Android Developer →{" "}
+              Android Developer <span aria-hidden="true">→</span>{" "}
               <a
                 className={styles.experienceItemLink}
                 href="https://tinder.com/"
@@ -218,6 +218,11 @@ export default function Home() {
           </ul>
         </section>
       </main>
+      <footer className={styles.footer}>
+        <p>
+          &copy; {new Date().getFullYear()} Andrew Sauer
+        </p>
+      </footer>
     </>
   );
 }
