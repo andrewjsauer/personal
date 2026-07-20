@@ -8,12 +8,12 @@ export default function manifest(): MetadataRoute.Manifest {
       "Andrew Sauer — AI Product Strategist & Engineer. Helping teams identify where AI creates real leverage, then building the systems that deliver it.",
     start_url: "/",
     display: "standalone",
-    background_color: "#eaeaee",
-    theme_color: "#073763",
+    background_color: "#faf9f7",
+    theme_color: "#0a3a62",
     icons: [
       {
         src: "/favicon.ico",
-        sizes: "any",
+        sizes: "16x16 32x32",
         type: "image/x-icon",
       },
       {

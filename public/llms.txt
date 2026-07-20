@@ -22,6 +22,10 @@ Background in neuroscience (Saint Mary's College of California) and product stra
 - Construction AI
 - System Design & Architecture
 
+## Certifications
+
+- Claude Certified Architect — Foundations (Anthropic), certified July 2026, valid through July 2027
+
 ## Links
 
 - Website: https://andrewjsauer.com

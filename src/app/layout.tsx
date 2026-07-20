@@ -1,19 +1,28 @@
 import type { Metadata, Viewport } from "next";
-import { Poppins, Roboto } from "next/font/google";
+import {
+  Bricolage_Grotesque,
+  Instrument_Sans,
+  IBM_Plex_Mono,
+} from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
   display: "swap",
-  weight: ["300", "500"],
-  variable: "--font-poppins",
+  variable: "--font-display",
 });
 
-const roboto = Roboto({
+const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
   display: "swap",
-  weight: ["300", "400", "500"],
-  variable: "--font-roboto",
+  variable: "--font-body",
+});
+
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500"],
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -73,7 +82,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#073763",
+  themeColor: "#0a3a62",
   width: "device-width",
   initialScale: 1,
 };
@@ -110,6 +119,17 @@ export default function RootLayout({
         url: "https://sauerApple.com/",
       },
     ],
+    hasCredential: {
+      "@type": "EducationalOccupationalCredential",
+      name: "Claude Certified Architect — Foundations",
+      credentialCategory: "Professional Certification",
+      recognizedBy: {
+        "@type": "Organization",
+        name: "Anthropic",
+      },
+      validFrom: "2026-07",
+      validUntil: "2027-07",
+    },
     alumniOf: [
       {
         "@type": "EducationalOrganization",
@@ -134,7 +154,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${roboto.variable}`}>
+      <body
+        className={`${bricolage.variable} ${instrumentSans.variable} ${plexMono.variable}`}
+      >
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
