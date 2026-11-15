@@ -25,7 +25,16 @@ const plexMono = IBM_Plex_Mono({
   variable: "--font-mono",
 });
 
+const siteUrl = "https://www.andrewjsauer.com";
+const profileImage = {
+  url: "/profile.jpg",
+  width: 1000,
+  height: 750,
+  alt: "Photo of Andrew Sauer",
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Andrew Sauer | AI Product Strategy & Engineering",
   description:
     "Andrew Sauer helps teams identify where AI creates real leverage — then designs and builds the systems that deliver it. Focus areas: construction, media, and enterprise document intelligence.",
@@ -45,27 +54,23 @@ export const metadata: Metadata = {
     title: "Andrew Sauer | AI Product Strategy & Engineering",
     description:
       "Andrew Sauer helps teams identify where AI creates real leverage — then designs and builds the systems that deliver it. Focus areas: construction, media, and enterprise document intelligence.",
-    url: "https://andrewjsauer.com",
+    url: siteUrl,
     siteName: "Andrew Sauer Portfolio",
     locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: "https://andrewjsauer.com/profile.jpg",
-        width: 1000,
-        height: 750,
-        alt: "Photo of Andrew Sauer",
-      },
-    ],
+    images: [profileImage],
   },
   twitter: {
     card: "summary_large_image",
+    site: "@1andrewjsauer",
+    creator: "@1andrewjsauer",
     title: "Andrew Sauer | AI Product Strategy & Engineering",
     description:
       "Andrew Sauer helps teams identify where AI creates real leverage — then designs and builds the systems that deliver it.",
+    images: [profileImage],
   },
   alternates: {
-    canonical: "https://andrewjsauer.com",
+    canonical: siteUrl,
   },
   robots: {
     index: true,
@@ -78,7 +83,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  metadataBase: new URL("https://andrewjsauer.com"),
 };
 
 export const viewport: Viewport = {
@@ -97,10 +101,12 @@ export default function RootLayout({
     "@type": "Person",
     name: "Andrew Sauer",
     jobTitle: "AI Product Strategist & Engineer",
-    url: "https://andrewjsauer.com",
-    image: "https://andrewjsauer.com/profile.jpg",
+    url: siteUrl,
+    image: `${siteUrl}/profile.jpg`,
     sameAs: [
+      "https://x.com/1andrewjsauer",
       "https://github.com/andrewjsauer",
+      "https://www.sauerapple.com",
       "https://gitlab.com/andrewjsauer",
       "https://www.linkedin.com/in/andrewjsauer/",
     ],
@@ -116,7 +122,7 @@ export default function RootLayout({
       {
         "@type": "Organization",
         name: "sauerApple",
-        url: "https://sauerApple.com/",
+        url: "https://www.sauerapple.com/",
       },
     ],
     hasCredential: {

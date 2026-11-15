@@ -12,8 +12,26 @@ export default function Home() {
           <h1 className={styles.title}>Andrew Sauer</h1>
           <nav
             className={styles.socialContainer}
-            aria-label="Social media links"
+            aria-label="Studio and social links"
           >
+            <a
+              className={styles.socialLink}
+              target="_blank"
+              href="https://www.sauerapple.com/"
+              rel="noopener noreferrer"
+              aria-label="Studio (opens in a new tab)"
+            >
+              Studio
+            </a>
+            <a
+              className={styles.socialLink}
+              target="_blank"
+              href="https://www.sauerapple.com/blog"
+              rel="noopener noreferrer"
+              aria-label="Blog (opens in a new tab)"
+            >
+              Blog
+            </a>
             <a
               className={styles.socialLink}
               target="_blank"
@@ -160,7 +178,7 @@ export default function Home() {
                 </span>{" "}
                 <a
                   className={styles.experienceItemLink}
-                  href="https://sauerApple.com/"
+                  href="https://www.sauerapple.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -174,7 +192,16 @@ export default function Home() {
                 Designing and shipping AI-first products that solve real user
                 problems — from personalized content tools to automated
                 workflows. Full ownership from product concept through
-                production deployment.
+                production deployment. Weekly notes on the{" "}
+                <a
+                  className={styles.experienceItemLink}
+                  href="https://www.sauerapple.com/blog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  studio blog
+                </a>
+                .
               </p>
             </li>
             <li className={styles.experienceItem}>
