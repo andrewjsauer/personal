@@ -27,7 +27,7 @@ const plexMono = IBM_Plex_Mono({
 
 const siteUrl = "https://www.andrewjsauer.com";
 const profileImage = {
-  url: "/profile.jpg",
+  url: `${siteUrl}/profile.jpg`,
   width: 1000,
   height: 750,
   alt: "Photo of Andrew Sauer",
