@@ -28,7 +28,10 @@ Background in neuroscience (Saint Mary's College of California) and product stra
 
 ## Links
 
-- Website: https://andrewjsauer.com
+- Website: https://www.andrewjsauer.com
+- Studio: https://www.sauerapple.com
+- Blog: https://www.sauerapple.com/blog
+- X: https://x.com/1andrewjsauer
 - LinkedIn: https://www.linkedin.com/in/andrewjsauer/
 - GitHub: https://github.com/andrewjsauer
 - GitLab: https://gitlab.com/andrewjsauer
@@ -36,4 +39,4 @@ Background in neuroscience (Saint Mary's College of California) and product stra
 
 ## Optional
 
-- llms-full.txt: https://andrewjsauer.com/llms-full.txt
+- llms-full.txt: https://www.andrewjsauer.com/llms-full.txt
